@@ -1178,7 +1178,7 @@ class UploadBehavior extends ModelBehavior {
 
 		if ($isMedia) {
 			$image->setResolution(300, 300);
-			// $srcFile = $srcFile . '[0]';
+			$srcFile = $srcFile . '[0]';
 		}
 
 		$image->readImage($srcFile);
@@ -2069,7 +2069,7 @@ class UploadBehavior extends ModelBehavior {
 					$image = new imagick();
 					if ($isMedia) {
 						$image->setResolution(300, 300);
-						//$srcFile = $srcFile . '[0]';
+						$srcFile = $srcFile . '[0]';
 					}
 
 					$image->readImage($srcFile);
